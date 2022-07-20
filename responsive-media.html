@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive media</title>
+    <style>
+        body{
+            /* Body max-width & margine-auto */
+            max-width: 800px;
+            /* border: 1px solid rebeccapurple; */
+            margin: 0 auto;
+        }
+      h1 {
+        width: 40vw;
+      }
+      .pic img{
+        width: 100%;
+      }
+/* container responsive kora */
+      .container-two{
+        display: flex;
+      }
+      .container-two .split{
+        width: 50%;
+      }
+      .split>img{
+        width: 100%;
+      }
+/* EKTAR NICHE EKTA IMAGE */
+      @media screen and (max-width:576px){
+        .container-two{
+            flex-direction: column;
+        }
+        .container-two .split{
+        width: 100%;
+      }
+      }
+/* responsive with grid */
+.container{
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+.food{
+    border: 3px solid silver;
+    border-radius: 15px;
+    padding: 10px;
+}
+#food-1{
+    grid-row:1/-1 ;
+}
+.food>img{
+    width: 100%;
+}
+@media screen and (max-width:576px){
+.container{
+        grid-template-columns: repeat(1,1fr);
+      }
+ }
+ @media screen and (min-width:577px)and (max-width:991px){
+.container{
+        grid-template-columns: repeat(2,1fr);
+      }
+      #food-1{
+        grid-row: none;
+      }
+ }
+    </style>
+  </head>
+  <body>
+    <!-- 1.viewport        em ram % vw
+    2.CSS relative unit  
+    3.Responsive image or fluide image
+    4.Body max-width & margine-auto 
+    5.Responsive Split Screen using flex (2 column section)
+    6.Grid responsive multi column
+    7.manu responsive ( js )-->
+    <h1>DO RESPONSIVE</h1>
+    <div class="pic">
+        <img src="img/line.png" alt="">
+    </div>
+    <section>
+        <div class="container-two">
+            <div class="split"><img src="img/r-pic.png" alt=""></div>
+            <div class="split"><img src="img/line.png" alt=""></div>
+        </div>
+    </section>
+        <h2>Multi column</h2>
+        <div class="container">
+            <div id="food-1" class="food">
+                <img src="img/r-pic.png" alt="">
+                <h2>It's a grid</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, explicabo.</p>
+                <button>Try this food</button>
+            </div>
+            <div class="food">
+                <img src="img/r-pic.png" alt="">
+                <h2>It's a grid</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, explicabo.</p>
+                <button>Try this food</button>
+            </div>
+            <div class="food">
+                <img src="img/r-pic.png" alt="">
+                <h2>It's a grid</h2>
+                <p>Quibusdam quam aliquam enim placeat atque error consectetur? Est, saepe!</p>
+                <button>Try this food</button>
+            </div>
+            <div class="food">
+                <img src="img/r-pic.png" alt="">
+                <h2>It's a grid</h2>
+                <p>Veniam est accusantium illo vitae laboriosam, neque officia nam quod.</p>
+                <button>Try this food</button>
+            </div>
+            <div class="food">
+                <img src="img/r-pic.png" alt="">
+                <h2>It's a grid</h2>
+                <p>Excepturi cumque hic quae possimus, facere enim voluptas itaque iure?</p>
+                <button>Try this food</button>
+            </div>
+            <div class="food">
+                <img src="img/r-pic.png" alt="">
+                <h2>It's a grid</h2>
+                <p>Officiis voluptates vitae, expedita ab nisi obcaecati eos unde laudantium?</p>
+                <button>Try this food</button>
+            </div>
+            <div class="food">
+                <img src="img/r-pic.png" alt="">
+                <h2>It's a grid</h2>
+                <p>Ad temporibus obcaecati ducimus accusantium nulla ipsa voluptatibus, ea pariatur.</p>
+                <button>Try this food</button>
+            </div>
+            <div class="food">
+                <img src="img/r-pic.png" alt="">
+                <h2>It's a grid</h2>
+                <p>Obcaecati error, nulla aliquam deserunt beatae totam vel consectetur sapiente?</p>
+                <button>Try this food</button>
+            </div>
+            <div class="food">
+                <img src="img/r-pic.png" alt="">
+                <h2>It's a grid</h2>
+                <p>Rerum sapiente quia repellendus, perspiciatis vitae soluta numquam recusandae adipisci?</p>
+                <button>Try this food</button>
+            </div>
+            <div class="food">
+                <img src="img/r-pic.png" alt="">
+                <h2>It's a grid</h2>
+                <p>Sed consequatur temporibus corrupti atque quam nemo explicabo sunt possimus!</p>
+                <button>Try this food</button>
+            </div>
+        </div>
+  </body>
+</html>

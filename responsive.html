@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4,1fr);
+            gap: 20px;
+            margin:40px ;
+        }
+        .food{
+            border: 2px solid gainsboro;
+            border-radius: 15px;
+            padding: 20px;
+        }
+        /* img responsive */
+        .food>img{
+            width: 80%;
+        }
+
+        /* smaller device */
+        @media screen and (max-width:567px) {
+            /* .food{
+                background-color: burlywood;
+            } */
+            .container{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+
+        /* medium device */
+        @media screen and (min-width:567px) and (max-width:991px){
+            /* .food{
+                background-color:violet;
+            } */
+            .container{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="img/r-pic.png" alt="">
+            <h2>item-1</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni explicabo animi quod enim provident eius corrupti sunt ducimus unde officiis?
+                <h4>Pic-price : 100</h4>
+            </p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="img/r-pic.png" alt="">
+            <h2>item-2</h2>
+            <p>
+                Facere autem quibusdam error dolorem, labore doloremque delectus in dignissimos minima id consectetur, quae officiis, nam reiciendis cupiditate exercitationem sunt.
+                <h4>Pic-price : 200</h4>
+            </p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="img/r-pic.png" alt="">
+            <h2>item-3</h2>
+            <p>
+                Tempora, ratione adipisci dolores perferendis ea blanditiis consequuntur ex ad maiores sit doloremque illum quidem facilis autem repellat unde rem!
+                <h4>Pic-price : 300</h4>
+            </p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="img/r-pic.png" alt="">
+            <h2>item-4</h2>
+            <p>
+                Repudiandae animi, quia iure, debitis blanditiis perspiciatis esse quis quaerat fuga, libero nisi ipsa. Sit eaque quibusdam eveniet quam officiis?
+                <h4>Pic-price : 400</h4>
+            </p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="img/r-pic.png" alt="">
+            <h2>item-5</h2>
+            <p>
+                Sit quidem totam corporis sequi ad, magnam quia expedita temporibus nisi architecto aut voluptatem. Magni reprehenderit non eos quos dolore.
+                <h4>Pic-price : 500</h4>
+            </p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="img/r-pic.png" alt="">
+            <h2>item-6</h2>
+            <p>
+                Suscipit iure exercitationem rem magni, incidunt iusto, aspernatur deserunt aperiam recusandae atque harum, commodi non eaque unde quam ea qui.
+                <h4>Pic-price : 600</h4>
+            </p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="img/r-pic.png" alt="">
+            <h2>item-7</h2>
+            <p>
+                Non eius vel distinctio quas quisquam obcaecati, id tempore nostrum sapiente, commodi ab praesentium voluptatibus porro totam voluptatem a illum?
+                <h4>Pic-price : 700</h4>
+            </p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="img/r-pic.png" alt="">
+            <h2>item-8</h2>
+            <p>
+                Dolore corporis dicta, sed deserunt, aspernatur quisquam est nostrum quis minima ipsum nulla, consequatur a eaque at praesentium repellendus dolorem?
+                <h4>Pic-price : 800</h4>
+            </p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="img/r-pic.png" alt="">
+            <h2>item-9</h2>
+            <p>
+                Facilis, atque possimus. Velit eos, doloribus, facere nam omnis aut aperiam voluptatum cum itaque officia ducimus labore veritatis hic? Rerum.
+                <h4>Pic-price : 900</h4>
+            </p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="img/r-pic.png" alt="">
+            <h2>item-10</h2>
+            <p>
+                At obcaecati perferendis minus dicta eos vel atque? Harum dolore cupiditate aliquam, nostrum voluptatem hic quam deserunt possimus perferendis nam.
+                <h4>Pic-price : 1000</h4>
+            </p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="img/r-pic.png" alt="">
+            <h2>item-11</h2>
+            <p>
+                Consequatur incidunt minima saepe sapiente fuga debitis consectetur natus quasi itaque amet quas cupiditate architecto id, aliquam provident, vel voluptas.
+                <h4>Pic-price : 1100</h4>
+            </p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="img/r-pic.png" alt="">
+            <h2>item-12</h2>
+            <p>
+                Inventore ullam perspiciatis doloribus molestias expedita. Et mollitia nisi reiciendis quia sunt rerum consequuntur, maiores sed sapiente maxime, ipsum ipsa!
+                <h4>Pic-price : 1200</h4>
+            </p>
+            <button>Order Now</button>
+        </div>
+    </div>
+
+</body>
+</html>
